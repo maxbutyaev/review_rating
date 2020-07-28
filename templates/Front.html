@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Review_Rate</title>
+</head>
+<body>
+
+<form enctype="application/x-www-form-urlencoded" method="post" action="http://127.0.0.1:8000/homepage/">
+<label for="textInput">Язык:</label>
+    <label>
+        <select name="language">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+            <option value="zh">中文</option>
+        </select>
+    </label>
+    <textarea cols="50" rows="5" id="textInput" placeholder="Введите ваш отзыв на фильм" name="text" type="text" required></textarea>
+<button type="submit">Отправить</button>
+</form>
+
+<p>{{ comment_str }}</p>
+<p>{{ rate_str }}</p>
+<p>{{ warn_str }}</p>
+
+</body>
+</html>
