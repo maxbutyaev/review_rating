@@ -25,7 +25,7 @@ SECRET_KEY = '6%svwcqc2wh1p-&5pq*bxy^++-pcc#md#$4yq*28+92#q!jstt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.reviewrate.na4u.ru']
 
 
 # Application definition
