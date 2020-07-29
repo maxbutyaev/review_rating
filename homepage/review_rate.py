@@ -52,6 +52,7 @@ def tokenize(sentence):
     # getting sentence made of important lemmatized and stemmed words
     return tokened_sentence, num_tokens
 
+color_dict = {'positive' : '#DAF1DB', 'negative' : '#FFE3E3', 'neutral' : '#F2F2F2'}
 
 def rate(text, language):
     translator_to_en = Translator(to_lang='en', from_lang=language)
@@ -68,8 +69,11 @@ def rate(text, language):
         warn_str=translator_from_en.translate('Warning! Your comment is too short, rating may be inaccurate. Write a detailed movie review for more accuracy.')
     else:
         warn_str=''
-    if rating >= 5:
-        is_positive = True
+    if rating > 6:
+        sentiment ='positive'
+    elif rating<4:
+        sentiment ='negative'
     else:
-        is_positive = False
-    return comment_str, rate_str, warn_str, is_positive
+        sentiment = 'neutral'
+    color = color_dict[sentiment]
+    return comment_str, rate_str, warn_str, color
