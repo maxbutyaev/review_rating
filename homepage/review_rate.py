@@ -23,7 +23,7 @@ from review_rating import settings
 ps = PorterStemmer()
 lemmatizer = WordNetLemmatizer()
 
-data_dir = settings.BASE_DIR + '\\data\\'
+data_dir = settings.BASE_DIR + '/data/'
 
 
 def get_wordnet_pos(word):
