@@ -16,4 +16,4 @@ def index(request):
     else:
         comment_str, rate_str, warn_str, color = review_rate.rate(text, language)
     data = {'comment_str': comment_str, 'rate_str': rate_str, 'warn_str': warn_str, 'color': color, 'server_adress': server_adress}
-    return render(request, "Front.html", context=data)
+    return render(request, "Front_homepage.html", context=data)

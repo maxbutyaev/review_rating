@@ -10,7 +10,7 @@ from xgboost import XGBRegressor
 start_time = time.time()
 print('Started', time.ctime())
 
-datadir = root_dir = os.path.abspath(os.curdir) + '\\'
+datadir = os.path.abspath(os.curdir) + '/'
 
 trainneg = pd.read_csv(datadir + 'trainneg.csv', sep=';', index_col='ids').drop('comments', axis=1)
 trainneg['is_positive'] = [0] * len(trainneg)
