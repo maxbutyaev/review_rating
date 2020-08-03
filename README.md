@@ -1,6 +1,6 @@
 # Модель для классификации отзывов
 ### В этом репозитории содержатся все файлы Django-проекта веб-сервиса для классификации отзывов и присвоения им рейтинга от 1 до 10
-### Работу прототипа веб-сервиса можно оценить [ЗДЕСЬ](https://reviewrate.na4u.ru/). Кроме того, можно протестировать модель самому и получить все приведённые ниже метрики [ЗДЕСЬ](https://colab.research.google.com/drive/1-hNOFUq7I6_1qT7jcZEKT05_W0X3j37H#scrollTo=H9jD3AKKqzWe).
+### Работу прототипа веб-сервиса можно оценить [ЗДЕСЬ](https://reviewrating.na4u.ru/). Кроме того, можно протестировать модель самому и получить все приведённые ниже метрики [ЗДЕСЬ](https://colab.research.google.com/drive/1-hNOFUq7I6_1qT7jcZEKT05_W0X3j37H#scrollTo=H9jD3AKKqzWe).
 # Отчёт о проделанной работе, оценка точности модели.
 ## I.  Выполнение
 ### 1)  [Предобработка данных](https://github.com/maxbutyaev/review_rating/blob/master/data/gettingDatasets.py)
