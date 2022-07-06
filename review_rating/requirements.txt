@@ -13,7 +13,7 @@ filelock==3.0.12
 identify==1.4.25
 idna==2.10
 joblib==0.16.0
-lxml==4.6.3
+lxml==4.9.1
 nltk==3.5
 nodeenv==1.4.0
 numpy==1.19.1
